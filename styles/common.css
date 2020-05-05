@@ -32,14 +32,14 @@
 }
 
 body {
-  font-family: "Graphik Regular";
+  font-family: "Graphik Regular", sans-serif;
   color: #333;
-  line-height: 24px;
 }
 
 .button {
   cursor: pointer;
-  font-family: 'Graphik Medium';
+  color: white;
+  font-family: "Graphik Medium", sans-serif;
   font-size: 14px;
   text-transform: uppercase;
   transition: 0.5s ease-in-out;
@@ -48,6 +48,12 @@ body {
   background-color: white;
   color: #136cfa;
   transition: 0.5s ease-in-out;
+}
+
+.heading {
+  padding: 0 12px;
+  font-family: "Graphik Medium",sans-serif;
+  text-align: center;
 }
 
 .header {
@@ -67,7 +73,7 @@ body {
 .header__logo-wrapper {
   grid-area: logo;
 }
-.header__logo{
+.header__logo {
   display: block;
 }
 .header__toggle {
