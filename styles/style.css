@@ -1,1 +1,34 @@
+.promo {
+  height: 600px;
+  background: url("../images/backgrounds/home-promo.png") center;
+  background-size: cover;
+}
 
+.section {
+  display: flex;
+  align-items: center;
+  padding: 96px 0;
+  justify-content: center;
+}
+.promo .section__container {
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.promo__heading {
+  padding: 0 12px;
+  font: 40px "Graphik Medium";
+}
+.promo__tagline {
+  padding: 0 12px;
+  margin: 8px 0 24px 0;
+}
+.button-promo,
+.button-process {
+  height: 48px;
+  padding: 16px 32px;
+  background-color: #136cfa;
+  border-radius: 4px;
+  margin: 0 auto;
+}

@@ -10,11 +10,11 @@
 }
 @font-face {
   font-family: "Graphik Medium";
-  src: url("/fonts/Graphik-Medium-Web.eot");
-  src: url("/fonts/Graphik-Medium-Web.eot#iefix") format("embedded-opentype"),
-    url("/fonts/Graphik-Medium-Web.woff2") format("woff2"),
-    url("/fonts/Graphik-Medium-Web.woff") format("woff"),
-    url("/fonts/Graphik-Medium-Web.ttf") format("truetype");
+  src: url("../fonts/Graphik-Medium-Web.eot");
+  src: url("../fonts/Graphik-Medium-Web.eot#iefix") format("embedded-opentype"),
+    url("../fonts/Graphik-Medium-Web.woff2") format("woff2"),
+    url("../fonts/Graphik-Medium-Web.woff") format("woff"),
+    url("../fonts/Graphik-Medium-Web.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -26,15 +26,28 @@
   list-style: none;
   vertical-align: baseline;
   font-size: 100%;
-  font: inherit;
   text-decoration: none;
   color: inherit;
+  box-sizing: border-box;
 }
 
 body {
   font-family: "Graphik Regular";
   color: #333;
   line-height: 24px;
+}
+
+.button {
+  cursor: pointer;
+  font-family: 'Graphik Medium';
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: 0.5s ease-in-out;
+}
+.button:hover {
+  background-color: white;
+  color: #136cfa;
+  transition: 0.5s ease-in-out;
 }
 
 .header {
@@ -53,6 +66,9 @@ body {
 }
 .header__logo-wrapper {
   grid-area: logo;
+}
+.header__logo{
+  display: block;
 }
 .header__toggle {
   grid-area: toggle;
