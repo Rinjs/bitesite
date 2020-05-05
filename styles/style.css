@@ -75,7 +75,7 @@
   padding-left: 32px;
 }
 
-/*Benefits*/
+/*Benefits section*/
 .benefits {
   background-color: #136cfa;
 }
@@ -130,6 +130,23 @@
   content: url(../images/icons/briefcase.svg);
 }
 
+/*Partners section*/
+.partners__container {
+  margin-top: 48px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.partners__container svg {
+  margin: 0 24px;
+}
+
+/*Ownership section*/
+.ownership__heading {
+  margin-bottom: 48px;
+  line-height: 48px;
+}
+
 /*Adaptation*/
 @media only screen and (max-width: 1200px) {
   .benefits__cards {
@@ -146,6 +163,12 @@
   }
 }
 @media only screen and (max-width: 700px) {
+  .heading {
+    margin-bottom: 24px;
+  }
+  .section {
+    padding: 24px 0;
+  }
   .benefits__cards {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
@@ -161,11 +184,15 @@
     grid-row-gap: 20px;
     grid-template-rows: repeat(4, 1fr);
   }
-  .section__container {
+  .section__container,
+  .footer__container {
     padding: 0px 20px;
   }
 }
 @media only screen and (max-width: 450px) {
+  .partners__container svg {
+    margin: 0;
+  }
   .section {
     padding: 43px 0;
   }
@@ -178,7 +205,8 @@
   .heading {
     padding: 0;
   }
-  .section__container {
+  .section__container,
+  .footer__container {
     padding: 0px 10px;
   }
   .promo .section__container {
@@ -186,7 +214,8 @@
   }
 }
 @media only screen and (max-width: 350px) {
-  .section__container {
+  .section__container,
+  .footer__container {
     padding: 0px 5px;
   }
 }
