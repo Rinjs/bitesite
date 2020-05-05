@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 8px 0;
+  background-color: #ffffff;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1280px;
+  padding: 0 48px;
+}
+.header__toggle {
+  display: none;
+}
+.header_fixed {
+  position: fixed;
+  top: 0;
+}
